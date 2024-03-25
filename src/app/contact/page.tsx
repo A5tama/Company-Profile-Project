@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaSnapchat } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 my-10">
       <Head>
         <title>Contact Us - MANNA Herbal Skincare Products</title>
       </Head>

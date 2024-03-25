@@ -17,76 +17,83 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import pro1 from "../../public/produkHero/pro1.png"
+import pro2 from "../../public/produkHero/pro2.png"
+import pro3 from "../../public/produkHero/pro3.png"
+import pro4 from "../../public/produkHero/pro4.png"
+import pro5 from "../../public/produkHero/pro5.png"
+import pro6 from "../../public/produkHero/pro6.png"
+import pro7 from "../../public/produkHero/pro7.png"
 
 const Homepage = () => {
   return (
-    <>
+    <div>
       <div className="bg-[url(/alo.webp)] bg-cover grid mt-0 lg:grid-cols-2 grid-flow-row lg:h-3/4 my-3">
         {/* GRID#1 */}
-        <div className=" flex justify-center mt-40">
+        <div className=" flex justify-center mt-40 lg:my-auto">
           <Carousel>
             <CarouselContent className="-z-50">
               <CarouselItem>
                 <Image
-                  src="/pro4.png"
-                  alt=""
+                  src={pro4}
+                  alt="shower gel"
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro3.png"
-                  alt=""
+                  src={pro3}
+                  alt="serum"
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro5.png"
+                  src={pro5}
                   alt=""
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro1.png"
+                  src={pro1}
                   alt=""
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro2.png"
+                  src={pro2}
                   alt=""
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro7.png"
+                  src={pro7}
                   alt=""
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/pro6.png"
+                  src={pro6}
                   alt=""
                   width={400}
                   height={20}
-                  className="mx-auto"
+                  className="mx-auto lg:size-full"
                 />
               </CarouselItem>
             </CarouselContent>
@@ -97,7 +104,7 @@ const Homepage = () => {
 
         {/* GRID#2 */}
         <div className="pl-14 pt-12 lg:pt-15 lg:pl-18 justify-center">
-          <h1 className="text-neutral-200  font-bold font-serif text-2xl lg:text-5xl mb-5">
+          <h1 className="text-neutral-200  font-bold font-serif  text-2xl lg:text-5xl mb-24 lg:mb-5">
             The Fusion of Nature, Innovation For Your Beauty
           </h1>
           <p className="text-white text-lg p-2 lg:p-4">
@@ -287,7 +294,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
